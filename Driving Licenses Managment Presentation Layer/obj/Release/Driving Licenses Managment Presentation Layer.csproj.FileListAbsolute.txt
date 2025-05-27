@@ -1,0 +1,58 @@
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driving Licenses Managment Presentation Layer.exe.config
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driving Licenses Managment Presentation Layer.exe
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driving Licenses Managment Presentation Layer.pdb
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driver License Business Layer.dll
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driver License DataAccess Layer.dll
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driver License Business Layer.pdb
+D:\DLMSP\Driving Licenses Managment Presentation Layer\bin\Release\Driver License DataAccess Layer.pdb
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving Licenses Managment Presentation Layer.csproj.AssemblyReference.cache
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmManageApplicationTypes.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmUpdateApplicationType.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.TestAppointments.ctrlTestAppointments.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmAddNewTestAppointment.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.TestAppointments.frmScheduleTest.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmVisionTestAppointments.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.LDLApplication.ctrlLDLApplicationInfo.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.LDLApplication.frmAddEditLDLApplication.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.LDLApplication.frmLDLApplicationShowInfo.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.LDLApplication.frmLocalDrivingLicenseApplications.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.LDLApplication.frmUpdateLDLApplication.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Login.frmLogin.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.MainFormsPresentationLayer.frmMainForm.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.PeoplePresentationLayer.CtrlPersonInfoWithFillter.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Form1.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmAddEditPersonInfo.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.TestAppointments.ctrlScheduleTest.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.TestAppointments.frmTestAppointments.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Tests.ctrlTakeTest.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Tests.frmTakeTest.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.ctrlUserCard.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmPersonDetails.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.UsersPresentationLayer.frmChangePassword.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.UsersPresentationLayer.frmManageUsers.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmUserCard.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.frmPeople.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Properties.Resources.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.ctrlPersonCard.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving Licenses Managment Presentation Layer.csproj.GenerateResource.cache
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving Licenses Managment Presentation Layer.csproj.CoreCompileInputs.cache
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving Licenses Managment Presentation Layer.csproj.CopyComplete
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving Licenses Managment Presentation Layer.exe
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving Licenses Managment Presentation Layer.pdb
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Detain.frmDetainedLicenseList.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Detain.frmDetainLicense.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Detain.frmReleaseDetainedLicense.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Drivers.frmDrivers.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.InternationalLicense.frmInternationalLicense.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.InternationalLicense.frmInternationalLicenseInfo.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.InternationalLicense.frmInternationalLicenseManagment.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Licenses_Replacment.frmLicenseReplacment.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Licenses.ctrlLicenseInfo.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Licenses.ctrlLicensesHistory.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.IssueLicenses.frmIssueLicenses.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Licenses.frmLicenseInfo.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Licenses.frmLicensesHistory.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.Licenses.frmRenewLicense.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.TestTypes.frmEditTestTypes.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.TestTypes.frmTestTypes.resources
+D:\DLMSP\Driving Licenses Managment Presentation Layer\obj\Release\Driving_Licenses_Managment_Presentation_Layer.UsersPresentationLayer.frmAddEditUser.resources
