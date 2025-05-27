@@ -23,14 +23,14 @@ namespace Driving_Licenses_Managment_Presentation_Layer
         private static DataTable _dtAllPeople = clsPeople.GetAllPeople();
 
         //only select the columns that you want to show in the grid
-        private DataTable _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNumber",
+        private DataTable _dtPeople = _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo",
                                                          "FirstName", "SecondName", "ThirdName", "LastName",
                                                          "Gendor", "DateOfBirth", "Nationality",
                                                          "Phone", "Email");
         private void _RefreshPeopleList()
         {
             _dtAllPeople = clsPeople.GetAllPeople();
-            _dtPeople= _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNumber",
+            _dtPeople= _dtAllPeople.DefaultView.ToTable(false, "PersonID", "NationalNo",
                                                          "FirstName", "SecondName", "ThirdName", "LastName",
                                                          "Gendor", "DateOfBirth", "Nationality",
                                                          "Phone", "Email");
@@ -110,7 +110,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
                     break;
 
                 case "National No.":
-                    FilterColumn = "NationalNumber";
+                    FilterColumn = "NationalNo";
                     break;
 
                 case "First Name":

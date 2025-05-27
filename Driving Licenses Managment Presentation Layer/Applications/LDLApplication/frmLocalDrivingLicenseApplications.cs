@@ -92,7 +92,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer.LDLApplication
                     FillterColumn = "ClassName";
                     break;
                 case "National Number":
-                    FillterColumn = "NationalNumber";
+                    FillterColumn = "NationalNo";
                     break;
                 case "Full Name":
                     FillterColumn = "FullName";

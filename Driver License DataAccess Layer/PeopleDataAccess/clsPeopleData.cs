@@ -13,7 +13,7 @@ namespace Driver_License_DataAccess_Layer
     public class clsPeopleData
     {
 
-        public static bool GetPersonInfoByID(int PersonID, ref string PersonNationalNumber, ref string FirstName,
+        public static bool GetPersonInfoByID(int PersonID, ref string PersonNationalNo, ref string FirstName,
             ref string SecondName, ref string ThirdName, ref string LastName, ref DateTime DateOfBirth, ref short Gendor,
             ref string Address, ref string Email, ref string Phone, ref int NationalityCountryID, ref string ImagePath)
         {   
@@ -37,7 +37,7 @@ namespace Driver_License_DataAccess_Layer
                 {
                     IsFound = true;
 
-                    PersonNationalNumber = (string)Reader["NationalNumber"];
+                    PersonNationalNo = (string)Reader["NationalNo"];
                     FirstName = (string)Reader["FirstName"];
                     SecondName = (string)Reader["SecondName"];
                     ThirdName = (string)Reader["ThirdName"];
@@ -80,7 +80,7 @@ namespace Driver_License_DataAccess_Layer
             return IsFound;
         }
 
-        public static bool GetPersonInfoByNationalNumber(string NationalNumber, ref int PersonID, ref string FirstName, ref string SecondName,
+        public static bool GetPersonInfoByNationalNo(string NationalNo, ref int PersonID, ref string FirstName, ref string SecondName,
             ref string ThirdName, ref string LastName, ref DateTime DateOfBirth, ref Byte Gendor, ref string Address, ref string Email,
             ref string Phone, ref int NationalityCountryID, ref string ImagePath)
         {
@@ -88,11 +88,11 @@ namespace Driver_License_DataAccess_Layer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "select * from People Where NationalNumber = @NationalNumber";
+            string Query = "select * from People Where NationalNo = @NationalNo";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
-            command.Parameters.AddWithValue("@NationalNumber", NationalNumber);
+            command.Parameters.AddWithValue("@NationalNo", NationalNo);
 
             try
             {
@@ -145,7 +145,7 @@ namespace Driver_License_DataAccess_Layer
             return isFound;
 
         }
-        public static int AddNewPerson(string NationalNumber, string FirstName, string SecondName,
+        public static int AddNewPerson(string NationalNo, string FirstName, string SecondName,
             string ThirdName, string LastName, short Gendor, string Email, string Phone,
             string Address,DateTime DateOfBirth, int NationalityCountryID, string ImagePath)
         {
@@ -154,15 +154,15 @@ namespace Driver_License_DataAccess_Layer
 
             SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
             
-            string Query = @"INSERT INTO PEOPLE (NationalNumber, FirstName, SecondName, ThirdName, LastName,
+            string Query = @"INSERT INTO PEOPLE (NationalNo, FirstName, SecondName, ThirdName, LastName,
                             DateOfBirth, Gendor, Address, Phone, Email, NationalityCountryID, ImagePath)
-                            Values(@NationalNumber, @FirstName, @SecondName, @ThirdName, @LastName,
+                            Values(@NationalNo, @FirstName, @SecondName, @ThirdName, @LastName,
                             @DateOfBirth, @Gendor, @Address, @Phone, @Email, @NationalityCountryID, @ImagePath);
                             SELECT SCOPE_IDENTITY();";
 
             SqlCommand Command = new SqlCommand(Query, Connection);
 
-            Command.Parameters.AddWithValue("@NationalNumber", NationalNumber);
+            Command.Parameters.AddWithValue("@NationalNo", NationalNo);
             Command.Parameters.AddWithValue("@FirstName", FirstName);
             Command.Parameters.AddWithValue("@SecondName", LastName);
             Command.Parameters.AddWithValue("@ThirdName", ThirdName);
@@ -203,7 +203,7 @@ namespace Driver_License_DataAccess_Layer
             return PersonID;
         }
 
-        public static bool UpdatePersonInfo(int PersonID, string NationalNumber, string FirstName, string SecondName,
+        public static bool UpdatePersonInfo(int PersonID, string NationalNo, string FirstName, string SecondName,
             string ThirdName, string LastName, DateTime DateOFBirth , short Gendor, string Address,
             string Email, string Phone, int NationalityCountryID, string ImagePath)
         {
@@ -212,7 +212,7 @@ namespace Driver_License_DataAccess_Layer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
             string Query = @"UPDATE PEOPLE
-                            SET NationalNumber = @NationalNumber,
+                            SET NationalNo = @NationalNo,
                                 FirstName = @FirstName,
                                 SecondName = @SecondName,
                                 ThirdName = @ThirdName,
@@ -230,7 +230,7 @@ namespace Driver_License_DataAccess_Layer
             SqlCommand command = new SqlCommand(Query, connection);
 
             command.Parameters.AddWithValue("@PersonID", PersonID);
-            command.Parameters.AddWithValue("@NationalNumber", NationalNumber);
+            command.Parameters.AddWithValue("@NationalNo", NationalNo);
             command.Parameters.AddWithValue("@FirstName", FirstName);
             command.Parameters.AddWithValue("@SecondName", SecondName);
             command.Parameters.AddWithValue("@ThirdName", ThirdName);
@@ -337,7 +337,7 @@ namespace Driver_License_DataAccess_Layer
 
             SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = @"select PersonID, NationalNumber, FirstName, SecondName, ThirdName, LastName, DateOfBirth , Gendor = 
+            string Query = @"select PersonID, NationalNo, FirstName, SecondName, ThirdName, LastName, DateOfBirth , Gendor = 
                             CASE
                                 WHEN Gendor=0 THEN 'Male'
                                 WHEN Gendor=1 THEN 'Female'
@@ -375,17 +375,17 @@ namespace Driver_License_DataAccess_Layer
             return PeopleDataTable;
         }
 
-        public static bool IsPersonExist(string NationalNumber)
+        public static bool IsPersonExist(string NationalNo)
         {
             bool isFound = false;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = "SELECT Found=1 FROM People WHERE NationalNumber = @NationalNumber";
+            string query = "SELECT Found=1 FROM People WHERE NationalNo = @NationalNo";
 
             SqlCommand command = new SqlCommand(query, connection);
 
-            command.Parameters.AddWithValue("@NationalNumber", NationalNumber);
+            command.Parameters.AddWithValue("@NationalNo", NationalNo);
 
             try
             {

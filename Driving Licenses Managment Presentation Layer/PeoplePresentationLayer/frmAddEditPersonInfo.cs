@@ -84,7 +84,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
             txtSecondName.Text = "";
             txtThirdName.Text = "";
             txtLastName.Text = "";
-            txtlNationalNumber.Text = "";
+            txtlNationalNo.Text = "";
             rbMale.Checked = true;
             txtPhone.Text = "";
             txtEmail.Text = "";
@@ -118,7 +118,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
             txtSecondName.Text = _Person.SecondName;
             txtThirdName.Text = _Person.ThirdName;
             txtLastName.Text = _Person.LastName;
-            txtlNationalNumber.Text = _Person.NationalNumber;
+            txtlNationalNo.Text = _Person.NationalNo;
             dtpDataOfBirth.Value = _Person.DateOfBirth;
 
             if (_Person.Gendor == 0)
@@ -219,7 +219,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
             _Person.SecondName = txtSecondName.Text.Trim();
             _Person.ThirdName = txtThirdName.Text.Trim();
             _Person.LastName = txtLastName.Text.Trim();
-            _Person.NationalNumber = txtlNationalNumber.Text.Trim();
+            _Person.NationalNo = txtlNationalNo.Text.Trim();
             _Person.Email = txtEmail.Text.Trim();
             _Person.Phone = txtPhone.Text.Trim();
             _Person.Address = txtAddress.Text.Trim();
@@ -350,27 +350,27 @@ namespace Driving_Licenses_Managment_Presentation_Layer
         private void txtNationalNo_Validating(object sender, CancelEventArgs e)
         {
 
-            if (string.IsNullOrEmpty(txtlNationalNumber.Text.Trim()))
+            if (string.IsNullOrEmpty(txtlNationalNo.Text.Trim()))
             {
                 e.Cancel = true;
-                errorProvider1.SetError(txtlNationalNumber, "This field is required!");
+                errorProvider1.SetError(txtlNationalNo, "This field is required!");
                 return;
             }
             else
             {
-                errorProvider1.SetError(txtlNationalNumber, null);
+                errorProvider1.SetError(txtlNationalNo, null);
             }
 
             //Make sure the national number is not used by another person
-            if (txtlNationalNumber.Text.Trim() != _Person.NationalNumber && clsPeople._IsPersonExists(txtlNationalNumber.Text.Trim()))
+            if (txtlNationalNo.Text.Trim() != _Person.NationalNo && clsPeople._IsPersonExists(txtlNationalNo.Text.Trim()))
             {
                 e.Cancel = true;
-                errorProvider1.SetError(txtlNationalNumber, "National Number is used for another person!");
+                errorProvider1.SetError(txtlNationalNo, "National Number is used for another person!");
 
             }
             else
             {
-                errorProvider1.SetError(txtlNationalNumber, null);
+                errorProvider1.SetError(txtlNationalNo, null);
             }
         }
 

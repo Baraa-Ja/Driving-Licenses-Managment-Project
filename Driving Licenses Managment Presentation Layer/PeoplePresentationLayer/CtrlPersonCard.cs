@@ -53,7 +53,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
             if (_Person == null)
             {
                 _ResetPersonInfo();
-                MessageBox.Show("No Person With NationalNumber = " + NationaNumber.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No Person With NationalNo = " + NationaNumber.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -82,7 +82,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
             llEditPersonInfo.Enabled = true;
             _PersonID = _Person.PersonID;
             lblPersonID.Text = _Person.PersonID.ToString();
-            lblNationalNumber.Text = _Person.NationalNumber;
+            lblNationalNo.Text = _Person.NationalNo;
             lblName.Text = _Person.FullName();
             lblGendor.Text = _Person.Gendor == 0 ? "Male" : "Female";
             lblEmail.Text = _Person.Email;
@@ -100,7 +100,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer
 
             lblPersonID.Text = "????";
             lblName.Text = "????";
-            lblNationalNumber.Text = "????";
+            lblNationalNo.Text = "????";
             lblGendor.Text = "????";
             pbGendorPhoto.Image = Resources.Man_32;
             lblEmail.Text = "????";

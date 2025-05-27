@@ -232,7 +232,7 @@ namespace Driver_License_DataAccess_Layer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
             string Query = @"SELECT dbo.Drivers.DriverID as 'DriverID', dbo.Drivers.PersonID as 'PersonID',
-                           dbo.People.NationalNumber as 'National No', dbo.People.FirstName + ' ' + dbo.People.SecondName +
+                           dbo.People.NationalNo as 'National No', dbo.People.FirstName + ' ' + dbo.People.SecondName +
                            ' ' + ISNULL(dbo.People.ThirdName, '') + ' ' + dbo.People.LastName AS FullName,
                            dbo.Drivers.CreatedDate as 'Date', (SELECT  COUNT(LicenseID) AS 'Active Licenses'
                            FROM dbo.Licenses WHERE (IsActive = 1) AND (DriverID = dbo.Drivers.DriverID)) AS 'ActiveLicenses'

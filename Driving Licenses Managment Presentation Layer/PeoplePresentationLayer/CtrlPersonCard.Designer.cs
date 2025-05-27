@@ -41,7 +41,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lblPersonID = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.lblNationalNumber = new System.Windows.Forms.Label();
+            this.lblNationalNo = new System.Windows.Forms.Label();
             this.lblGendor = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblDateOfBirth = new System.Windows.Forms.Label();
@@ -202,16 +202,16 @@
             this.lblName.TabIndex = 11;
             this.lblName.Text = "????";
             // 
-            // lblNationalNumber
+            // lblNationalNo
             // 
-            this.lblNationalNumber.AutoSize = true;
-            this.lblNationalNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNumber.Location = new System.Drawing.Point(205, 115);
-            this.lblNationalNumber.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lblNationalNumber.Name = "lblNationalNumber";
-            this.lblNationalNumber.Size = new System.Drawing.Size(45, 20);
-            this.lblNationalNumber.TabIndex = 12;
-            this.lblNationalNumber.Text = "????";
+            this.lblNationalNo.AutoSize = true;
+            this.lblNationalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNationalNo.Location = new System.Drawing.Point(205, 115);
+            this.lblNationalNo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblNationalNo.Name = "lblNationalNo";
+            this.lblNationalNo.Size = new System.Drawing.Size(45, 20);
+            this.lblNationalNo.TabIndex = 12;
+            this.lblNationalNo.Text = "????";
             // 
             // lblGendor
             // 
@@ -416,7 +416,7 @@
             this.Controls.Add(this.lblDateOfBirth);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblGendor);
-            this.Controls.Add(this.lblNationalNumber);
+            this.Controls.Add(this.lblNationalNo);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.label10);
@@ -462,7 +462,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblPersonID;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblNationalNumber;
+        private System.Windows.Forms.Label lblNationalNo;
         private System.Windows.Forms.Label lblGendor;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblDateOfBirth;

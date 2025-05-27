@@ -14,7 +14,7 @@ namespace Driver_License_Business_Layer
         enMode _Mode = enMode.AddNew;
 
         public int PersonID { get; set; }
-        public string NationalNumber { get; set; }
+        public string NationalNo { get; set; }
         public string FirstName { get; set; }
         public string SecondName {  get; set; }
         public string ThirdName {  get; set; } 
@@ -42,7 +42,7 @@ namespace Driver_License_Business_Layer
         public clsPeople()
         {
             this.PersonID = -1;
-            this.NationalNumber = "";
+            this.NationalNo = "";
             this.FirstName = "";
             this.LastName = "";
             this.SecondName = "";
@@ -59,12 +59,12 @@ namespace Driver_License_Business_Layer
             _Mode = enMode.AddNew;
         }
 
-        private clsPeople(int PersonID, string NationalNumber, string FirstName, string SecondName,
+        private clsPeople(int PersonID, string NationalNo, string FirstName, string SecondName,
             string ThirdName, string LastName, DateTime DateOfBirth, short Gendor, string Address,
             string Email, string Phone, int NationalityCountryID, string ImagePath)
         {
             this.PersonID = PersonID;
-            this.NationalNumber = NationalNumber;
+            this.NationalNo = NationalNo;
             this.FirstName = FirstName;
             this.LastName = LastName;
             this.SecondName = SecondName;
@@ -84,20 +84,20 @@ namespace Driver_License_Business_Layer
 
         public static clsPeople FindPerson(int PersonID)
         {
-            string NationalNumber = "", FirstName = "", SecondName = "", ThirdName = "", LastName = "",
+            string NationalNo = "", FirstName = "", SecondName = "", ThirdName = "", LastName = "",
             Address = "", Email = "", Phone = "", ImagePath = "";
 
             DateTime DateOfBirth = DateTime.Now;
             int NationalityCountryID = -1;
             short Gendor = 0;
 
-            bool isfound = clsPeopleData.GetPersonInfoByID(PersonID, ref NationalNumber, ref FirstName, ref SecondName,
+            bool isfound = clsPeopleData.GetPersonInfoByID(PersonID, ref NationalNo, ref FirstName, ref SecondName,
                 ref ThirdName, ref LastName, ref DateOfBirth, ref Gendor, ref Address, ref Email, ref Phone,
                 ref NationalityCountryID, ref ImagePath);
 
             if(isfound)
             {
-                return new clsPeople(PersonID, NationalNumber, FirstName, SecondName, ThirdName, LastName, DateOfBirth,
+                return new clsPeople(PersonID, NationalNo, FirstName, SecondName, ThirdName, LastName, DateOfBirth,
                     Gendor, Address, Email,
                     Phone, NationalityCountryID, ImagePath);
             }
@@ -107,7 +107,7 @@ namespace Driver_License_Business_Layer
             }
         }
 
-        public static clsPeople FindPerson(string NationalNumber)
+        public static clsPeople FindPerson(string NationalNo)
         {
             string FirstName = "", SecondName = "", ThirdName = "", LastName = "",
             Address = "", Email = "", Phone = "", ImagePath = "";
@@ -116,13 +116,13 @@ namespace Driver_License_Business_Layer
             int NationalityCountryID = -1, PersonID = -1;
             Byte Gendor = 0;
 
-            bool isfound = clsPeopleData.GetPersonInfoByNationalNumber(NationalNumber, ref PersonID, ref FirstName, ref SecondName,
+            bool isfound = clsPeopleData.GetPersonInfoByNationalNo(NationalNo, ref PersonID, ref FirstName, ref SecondName,
                 ref ThirdName, ref LastName, ref DateOfBirth, ref Gendor, ref Address, ref Email, ref Phone,
                 ref NationalityCountryID, ref ImagePath);
 
             if (isfound)
             {
-                return new clsPeople(PersonID, NationalNumber, FirstName, SecondName, ThirdName, LastName, DateOfBirth, Gendor, Address, Email,
+                return new clsPeople(PersonID, NationalNo, FirstName, SecondName, ThirdName, LastName, DateOfBirth, Gendor, Address, Email,
                     Phone, NationalityCountryID, ImagePath);
             }
             else
@@ -133,7 +133,7 @@ namespace Driver_License_Business_Layer
 
         private bool _AddNewPerson()
         {
-            this.PersonID = clsPeopleData.AddNewPerson(this.NationalNumber, this.FirstName, this.SecondName, this.ThirdName,
+            this.PersonID = clsPeopleData.AddNewPerson(this.NationalNo, this.FirstName, this.SecondName, this.ThirdName,
                 this.LastName, this.Gendor, this.Email, this.Phone, this.Address, this.DateOfBirth,
                 this.NationalityCountryID, this.ImagePath);
 
@@ -142,7 +142,7 @@ namespace Driver_License_Business_Layer
 
         private bool _UpdatePerson()
         {
-            return clsPeopleData.UpdatePersonInfo(this.PersonID, this.NationalNumber, this.FirstName, this.SecondName,
+            return clsPeopleData.UpdatePersonInfo(this.PersonID, this.NationalNo, this.FirstName, this.SecondName,
                 this.ThirdName, this.LastName, this.DateOfBirth, this.Gendor, this.Address, this.Email, this.Phone,
                 this.NationalityCountryID, this.ImagePath);
         }
@@ -163,9 +163,9 @@ namespace Driver_License_Business_Layer
             return clsPeopleData.CheckPersonExists(PersonID);
         }
 
-        public static bool _IsPersonExists(string NationalNumber)
+        public static bool _IsPersonExists(string NationalNo)
         {
-            return clsPeopleData.IsPersonExist(NationalNumber);
+            return clsPeopleData.IsPersonExist(NationalNo);
         }
 
 

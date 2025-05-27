@@ -68,7 +68,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer.Licenses
             lblClassName.Text = _License.LicenseClassesInfo.ClassName;
             lblDriverName.Text = _License.DriverInfo.PersonInfo.FullName();
             lblLicenseID.Text = _LicenseID.ToString();
-            lblNationalNo.Text = _License.DriverInfo.PersonInfo.NationalNumber;
+            lblNationalNo.Text = _License.DriverInfo.PersonInfo.NationalNo;
             lblGendor.Text = _License.DriverInfo.PersonInfo.Gendor == 0 ? "Male" : "Female";
             lblIssueDate.Text = clsFormat.DateToShort(_License.IssueDate);
             lblIssueReason.Text = _License.IssueReasonText;
@@ -101,7 +101,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer.Licenses
             lblClassName.Text = _License.LicenseClassesInfo.ClassName;
             lblDriverName.Text = _License.DriverInfo.PersonInfo.FullName();
             lblLicenseID.Text = _LicenseID.ToString();
-            lblNationalNo.Text = _License.DriverInfo.PersonInfo.NationalNumber;
+            lblNationalNo.Text = _License.DriverInfo.PersonInfo.NationalNo;
             lblGendor.Text = _License.DriverInfo.PersonInfo.Gendor == 0 ? "Male" : "Female";
             lblIssueDate.Text = clsFormat.DateToShort(_License.IssueDate);
             lblIssueReason.Text = _License.IssueReasonText;

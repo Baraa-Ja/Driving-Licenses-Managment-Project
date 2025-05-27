@@ -57,7 +57,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtlNationalNumber = new System.Windows.Forms.TextBox();
+            this.txtlNationalNo = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtThirdName = new System.Windows.Forms.TextBox();
             this.txtSecondName = new System.Windows.Forms.TextBox();
@@ -145,7 +145,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtlNationalNumber);
+            this.groupBox1.Controls.Add(this.txtlNationalNo);
             this.groupBox1.Controls.Add(this.txtLastName);
             this.groupBox1.Controls.Add(this.txtThirdName);
             this.groupBox1.Controls.Add(this.txtSecondName);
@@ -442,16 +442,16 @@
             this.txtEmail.TabIndex = 17;
             this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
-            // txtlNationalNumber
+            // txtlNationalNo
             // 
-            this.txtlNationalNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlNationalNumber.Location = new System.Drawing.Point(195, 102);
-            this.txtlNationalNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtlNationalNumber.Multiline = true;
-            this.txtlNationalNumber.Name = "txtlNationalNumber";
-            this.txtlNationalNumber.Size = new System.Drawing.Size(139, 27);
-            this.txtlNationalNumber.TabIndex = 16;
-            this.txtlNationalNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtNationalNo_Validating);
+            this.txtlNationalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlNationalNo.Location = new System.Drawing.Point(195, 102);
+            this.txtlNationalNo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtlNationalNo.Multiline = true;
+            this.txtlNationalNo.Name = "txtlNationalNo";
+            this.txtlNationalNo.Size = new System.Drawing.Size(139, 27);
+            this.txtlNationalNo.TabIndex = 16;
+            this.txtlNationalNo.Validating += new System.ComponentModel.CancelEventHandler(this.txtNationalNo_Validating);
             // 
             // txtLastName
             // 
@@ -665,7 +665,7 @@
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtThirdName;
         private System.Windows.Forms.TextBox txtSecondName;
-        private System.Windows.Forms.TextBox txtlNationalNumber;
+        private System.Windows.Forms.TextBox txtlNationalNo;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.TextBox txtPhone;

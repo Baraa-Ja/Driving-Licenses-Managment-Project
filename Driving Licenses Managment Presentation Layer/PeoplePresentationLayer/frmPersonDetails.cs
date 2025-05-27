@@ -19,10 +19,10 @@ namespace Driving_Licenses_Managment_Presentation_Layer
             ctrlPersonCard1.LoadPersonInfo(PersonID);
         }
 
-        public frmPersonDetails(string NationalNumber)
+        public frmPersonDetails(string NationalNo)
         {
             InitializeComponent();
-            ctrlPersonCard1.LoadPersonInfo(NationalNumber);
+            ctrlPersonCard1.LoadPersonInfo(NationalNo);
         }
         private void btnClose_Click(object sender, EventArgs e)
         {

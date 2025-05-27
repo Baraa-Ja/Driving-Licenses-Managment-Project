@@ -61,7 +61,7 @@ namespace Driving_Licenses_Managment_Presentation_Layer.InternationalLicense
             lblDriverName.Text = _InternationalLicense.Driverinfo.PersonInfo.PersonFullname;
             lblInternatiolLicenseID.Text = _InternationalLicenseID.ToString();
             lblLicenseID.Text = _InternationalLicense.IssuedUsingLocalLicenseID.ToString();
-            lblNationalNo.Text = _InternationalLicense.Driverinfo.PersonInfo.NationalNumber;
+            lblNationalNo.Text = _InternationalLicense.Driverinfo.PersonInfo.NationalNo;
             lblGendor.Text = _InternationalLicense.Driverinfo.PersonInfo.Gendor == 0 ? "Male" : "Female";
             lblIssueDate.Text = clsFormat.DateToShort(_InternationalLicense.IssueDate);
             lblApplicationID.Text = _InternationalLicense.ApplicationID.ToString();
